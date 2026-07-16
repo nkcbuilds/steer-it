@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="splash.css" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, user-scalable=0"
+    />
+    <title>Steer It</title>
+  </head>
+  <body>
+    <main class="preview-shell">
+      <canvas id="shaft-preview" aria-hidden="true"></canvas>
+      <div class="shade" aria-hidden="true"></div>
+
+      <header class="map-strip">
+        <div class="brand-mark">SI</div>
+        <div class="map-copy">
+          <span class="map-kicker">CURRENT SHAFT</span>
+          <strong id="map-name">LOADING MAP</strong>
+        </div>
+        <div class="plays">
+          <strong id="play-count">--</strong>
+          <span>FLIGHTS</span>
+        </div>
+      </header>
+
+      <section class="launch-zone" aria-label="Launch current shaft">
+        <img class="rocket-mark" src="assets/pixel-v2/rocket-body.png" alt="" />
+        <button id="start-button" type="button">
+          <span>PLAY</span>
+          <small>LAUNCH SHAFT</small>
+        </button>
+      </section>
+
+      <aside id="creator-card" class="creator-card" hidden>
+        <span>MADE BY</span>
+        <strong id="creator-name"></strong>
+      </aside>
+
+      <footer class="challenge-footer">
+        <span id="completion-count">0 ESCAPES</span>
+        <span>STEER THE ENGINE · SURVIVE THE SHAFT</span>
+      </footer>
+    </main>
+    <script type="module" src="splash.ts" defer></script>
+  </body>
+</html>
